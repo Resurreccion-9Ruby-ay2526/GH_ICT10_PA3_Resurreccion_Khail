@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with dictionaries</title>
+    <!-- PyScript Core CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+
+    <!-- PyScript Core JavaScript Module -->
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+</head>
+<body>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+    
+        h2 {
+            color: #4a4e69;
+            margin-bottom: 1.5rem;
+        }
+    
+        form {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 320px;
+        }
+    
+        input[type="text"] {
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            outline: none;
+        }
+    
+        input[type="text"]:focus {
+            border-color: #6c5ce7;
+        }
+    
+        input[type="button"] {
+            padding: 12px;
+            background-color: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+    
+        input[type="button"]:hover {
+            background-color: #5b4bc4;
+        }
+    
+        #result {
+            margin-top: 1.5rem;
+            font-weight: 500;
+            color: #4a4e69;
+        }
+    </style>
+    <h2>Know the Creator of your Favorite Game</h2>
+    <form>
+        <input type="text" id="dictionary" placeholder="Enter your favorite word"><br>
+        <input type="button" py-click="game_details" value="Search">
+    </form>
+    <div id="result"></div>
+    <py-script src="main.py"></py-script> 
+</body>
+</html>
